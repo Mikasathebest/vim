@@ -26,7 +26,7 @@ set smartcase
 set backspace=indent,eol,start
 
 " Enable mouse support
-set mouse=a
+" set mouse=a
 
 " Set color scheme
 colorscheme desert
@@ -58,21 +58,26 @@ autocmd BufNewFile,BufRead *.yaml set filetype=yaml
 " Enable Perl mode for Perl files
 autocmd FileType perl setlocal filetype=perl
 
+" enables 24-bit color support
+set termguicolors
+highlight clear Underlined
+highlight Underlined cterm=underline gui=underline ctermfg=white guifg=white ctermbg=black guibg=black
+
 " Set backup and swap file options
 " set backup
 " set backupdir=~/.vim/backup
 " set directory=~/.vim/swap
 
 " Set the maximum textwidth to 79 characters
-set textwidth=79
+" set textwidth=79
 
 " Enable spell checking
 " set spell spelllang=en
 
 " Enable line wrapping for long lines
-set wrap
-set linebreak
-set showbreak=+++ 
+" set wrap
+" set linebreak
+" set showbreak=+++ 
 
 " Set the leader key to comma
 let mapleader=","
