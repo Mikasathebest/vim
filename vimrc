@@ -29,7 +29,7 @@ set backspace=indent,eol,start
 " set mouse=a
 
 " Set color scheme
-colorscheme desert
+colorscheme murphy
 
 " Enable incremental search
 set incsearch
@@ -59,9 +59,10 @@ autocmd BufNewFile,BufRead *.yaml set filetype=yaml
 autocmd FileType perl setlocal filetype=perl
 
 " enables 24-bit color support
-set termguicolors
-highlight clear Underlined
-highlight Underlined cterm=underline gui=underline ctermfg=white guifg=white ctermbg=black guibg=black
+" set termguicolors
+" highlight clear Underlined
+"highlight Underlined cterm=underline gui=underline ctermfg=white guifg=white ctermbg=black guibg=black
+set guifont=DejaVu\ Sans\ Mono\ 12
 
 " Set backup and swap file options
 " set backup
